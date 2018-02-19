@@ -13,5 +13,13 @@ public class PrintJSON {
 			e.printStackTrace();
 		}
 	}
-	
+	public void printMapAsJSON(Account acc) {
+		try {
+			JSONObject json = new JSONObject(acc);
+			System.out.println("This is an Account from 'accoutnMap' Hashmap as JSON:  "+json);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
