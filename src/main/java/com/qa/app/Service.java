@@ -42,7 +42,11 @@ public class Service {
 		}
 		return count;
 	}
-	
+
+	public int getAccountForFirstName(String string) {
+		return (int) accountMap.values().stream().filter(eachAccount -> eachAccount.getFirstName().equals(string)).count();
+		
+	}
 	
 
 }
