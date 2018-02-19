@@ -3,4 +3,23 @@
   <groupId>com.qa.account</groupId>
   <artifactId>account-project1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20180130</version>
+		</dependency>
+  		
+  
+  
+  
+
+
+  </dependencies>
+
+
+
+
 </project>

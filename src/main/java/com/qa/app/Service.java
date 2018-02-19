@@ -7,7 +7,7 @@ public class Service {
 	
 	
 	
-	private static Map<Integer, Account> accountMap = new HashMap<Integer, Account>();
+	static Map<Integer, Account> accountMap = new HashMap<Integer, Account>();
 	
 	public void createAccount(Integer key, Account account) {
 		accountMap.put(key, account);
@@ -25,9 +25,8 @@ public class Service {
 				System.out.println("Key " + entry.getKey()+" " + entry.getValue());
 			}
 		}
-		
-		
 	}
+	
 	
 
 }
