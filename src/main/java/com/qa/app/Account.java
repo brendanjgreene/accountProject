@@ -5,10 +5,10 @@ public class Account {
 	private String lastName;
 	private String accountNumber;
 	
-	public Account(String firstName, String lastName, String accountNumber) {
+	public Account(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.accountNumber = accountNumber;
+		this.accountNumber = Service.generateacNumber();
 	}
 	
 	public String getFirstName() {
