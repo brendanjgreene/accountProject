@@ -32,6 +32,16 @@ public class Service {
 			}
 		}
 	}
+
+	public int getcountforname(String string) {
+		int count = 0;
+		for (Account eachAccount: accountMap.values()) {
+			if (eachAccount.getFirstName().equals(string)) {
+				count ++;
+			}
+		}
+		return count;
+	}
 	
 	
 
