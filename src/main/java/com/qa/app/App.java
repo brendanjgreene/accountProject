@@ -21,7 +21,7 @@ public class App {
 		PrintJSON newJson = new PrintJSON();
 		newJson.printMapAsJSON();
 		newJson.printMapAsJSON(Account2);
-		newJson.printMapAsJSON(Account4);
+		newJson.printMapAsJSON(Account1);
 
 	}
 
