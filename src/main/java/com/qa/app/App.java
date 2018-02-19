@@ -16,7 +16,9 @@ public class App {
 		newService.retrieveAcct(1);
 		newService.retrieveAcct(2);
 		newService.retrieveAcct(3);
-		
+		PrintJSON newJson = new PrintJSON();
+		newJson.printMapAsJSON();
+		newJson.printMapAsJSON(Account2);
 
 	}
 
