@@ -34,18 +34,22 @@ public class Service {
 	}
 
 	public int getcountforname(String string) {
-		int count = 0;
+		int namecount = 0;
 		for (Account eachAccount: accountMap.values()) {
 			if (eachAccount.getFirstName().equals(string)) {
-				count ++;
+				namecount ++;
 			}
 		}
-		return count;
+		return namecount;
 	}
 
 	public int getAccountForFirstName(String string) {
 		return (int) accountMap.values().stream().filter(eachAccount -> eachAccount.getFirstName().equals(string)).count();
 		
+	}
+
+	public int getcountforlastname(String string) {
+		return (int) accountMap.values().stream().filter(eachAccount -> eachAccount.getLastName().equals(string)).count();
 	}
 	
 

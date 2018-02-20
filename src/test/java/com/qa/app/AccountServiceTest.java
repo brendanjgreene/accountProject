@@ -10,14 +10,14 @@ import junit.framework.Assert;
 public class AccountServiceTest {
 	private Service service;
 	private Account JohnBloggs;
-	private Account JaneBlogs;
+	private Account JaneBloggs;
 	private Account JohnGordon;
 
 	@Before
 	public void setUp() {
 		service = new Service();
 		JohnBloggs = new Account("John", "Bloggs");
-		JaneBlogs = new Account("Jane", "Bloggs");
+		JaneBloggs = new Account("Jane", "Bloggs");
 		JohnGordon = new Account("John", "Gordon");
 	}
 	
@@ -27,10 +27,11 @@ public class AccountServiceTest {
 		assertEquals(service.getAccountForFirstName("John"), 0);
 		service.createAccount(Service.generateKey(), JohnBloggs);
 		assertEquals(service.getAccountForFirstName("John"), 1);
-		service.createAccount(Service.generateKey(), JaneBlogs);
+		service.createAccount(Service.generateKey(), JaneBloggs);
 		assertEquals(service.getAccountForFirstName("John"), 1);
 		service.createAccount(Service.generateKey(), JohnGordon);
 		assertEquals(service.getAccountForFirstName("John"), 2);
+		assertEquals(service.getcountforlastname("Bloggs"), 2);
 	
 	}
 	
